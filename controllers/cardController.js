@@ -86,7 +86,7 @@ const updateCard = async (req, res) => {
     const updatedCard = await Card.findByIdAndUpdate(
       id,
       { $set: req.body },
-      { new: true, runValidators: true },
+      { returnDocument: "after", runValidators: true },
     );
 
     res.json(updatedCard);
