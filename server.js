@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5500;
 // CORS configuration to allow cross-device network requests
 app.use(
   cors({
-    origin: "*", // We will restrict this to your frontend URL later during deployment
+    origin: "https://quevex.onrender.com", // We will restrict this to your frontend URL later during deployment
     credentials: true,
   }),
 );
