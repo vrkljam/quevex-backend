@@ -43,7 +43,7 @@ mongoose
 // 3. BASE SANITY TEST ROUTE
 // ==========================================
 app.get("/", (req, res) => {
-  res.json({ message: "Projexis API is alive and kicking!" });
+  res.json({ message: "Quevex API is alive and kicking!" });
 });
 
 // ==========================================
